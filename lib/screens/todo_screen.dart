@@ -20,6 +20,7 @@ class TodoScreen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Container(
+              height: MediaQuery.of(context).size.height * 0.7,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20.0),
@@ -32,7 +33,6 @@ class TodoScreen extends StatelessWidget {
                 ],
               ),
               child: Column(
-                mainAxisSize: MainAxisSize.min,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -72,7 +72,7 @@ class TodoScreen extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.transparent,
+                        backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,
                         textStyle: TextStyle(color: Colors.blue[900]),
                       ),

@@ -39,7 +39,7 @@ class AddTaskModal extends StatelessWidget {
               },
               child: Text('Add'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.blue[900],
+                backgroundColor: Colors.blue[900],
                 textStyle: TextStyle(color: Colors.white),
               ),
             ),
